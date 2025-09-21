@@ -1,6 +1,22 @@
 import React from "react";
+import { useEffect } from "react";
+import { useState } from "react";
 
 export const Footer = () => {
+  const [scrollYposition, setScrollYposition] = useState(0);
+  const handleOnScrollY = () => {
+    setScrollYposition(window.scrollY);
+  };
+
+  useEffect(() => {
+    // end of the render , run following code
+    window.addEventListener("scroll", handleOnScrollY);
+    // clean up the event
+    return () => {
+      window.removeEventListener("scroll", handleOnScrollY);
+    };
+  }, []);
+ 
   return (
     <>
       <footer className="flex flex-center">
@@ -44,11 +60,13 @@ export const Footer = () => {
           &copy; Copy right all reserved 2025 || Made by me with 🚀
         </div>
       </footer>
-      <a href="">
-        <div className="goUP flex-center">
-          <i className="fa-solid fa-angle-up"></i>
-        </div>
-      </a>
+      {scrollYposition > 800 && (
+        <a href="">
+          <div className="goUP flex-center">
+            <i className="fa-solid fa-angle-up"></i>
+          </div>
+        </a>
+      )}
     </>
   );
 };
