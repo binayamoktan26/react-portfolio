@@ -1,8 +1,9 @@
 import React from "react";
 import background from "../assets/bg.png";
+// import { Layout } from "./Layout";
 export const Hero = () => {
   return (
-    <div>
+    <>
       <section className="hero-section container" id="hero">
         <div className="grid hero">
           <div className="left flex">
@@ -26,7 +27,7 @@ export const Hero = () => {
         </div>
       </section>
       {/* <!-- banner section 
-            --> */}
+            --> */} 
       <section className="flex banner container">
         <div className="flex info-content">
           <div className="flex-center icon-container">
@@ -58,6 +59,6 @@ export const Hero = () => {
           </div>
         </div>
       </section>
-    </div>
+    </>
   );
 };

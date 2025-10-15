@@ -2,6 +2,7 @@ import React from "react";
 import screenShot from "../assets/ss.png";
 import { Title } from "./Title";
 import { Card } from "./Card";
+
 export const Project = () => {
   const myProject = [
     {
@@ -34,13 +35,15 @@ export const Project = () => {
     },
   ];
   return (
-    <section className="projects container" id="projects">
-      <Title title="Projects" />
-      <div className="grid project-container">
-        {myProject.map((item, i) => (
-          <Card key={i} {...item} />
-        ))}
-      </div>
-    </section>
+    <>
+      <section className="projects container" id="projects">
+        <Title title="Projects" />
+        <div className="grid project-container">
+          {myProject.map((item, i) => (
+            <Card key={i} {...item} />
+          ))}
+        </div>
+      </section>
+    </>
   );
 };
