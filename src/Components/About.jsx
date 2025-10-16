@@ -1,7 +1,6 @@
 import React from "react";
-import background from "../assets/bg.png";
+import background from "../assets/profile.png";
 import { Title } from "./Title";
-
 
 export const About = () => {
   return (

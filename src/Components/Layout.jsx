@@ -1,5 +1,5 @@
 import React from "react";
-import background from "../assets/bg.png";
+
 import { Navbar } from "./Navbar";
 import { Footer } from "./Footer";
 import { Outlet } from "react-router-dom";

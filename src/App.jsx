@@ -1,5 +1,5 @@
 import "./App.css";
-import background from "./assets/bg.png";
+
 import { About } from "./Components/About";
 import { Contact } from "./Components/Contact";
 import { Footer } from "./Components/Footer";

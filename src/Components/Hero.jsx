@@ -1,5 +1,5 @@
 import React from "react";
-import background from "../assets/bg.png";
+import background from "../assets/profile.png";
 // import { Layout } from "./Layout";
 export const Hero = () => {
   return (
@@ -27,7 +27,7 @@ export const Hero = () => {
         </div>
       </section>
       {/* <!-- banner section 
-            --> */} 
+            --> */}
       <section className="flex banner container">
         <div className="flex info-content">
           <div className="flex-center icon-container">
